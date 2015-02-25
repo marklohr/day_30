@@ -1,7 +1,9 @@
+
 class MedicationsController < ApplicationController
 
   def index
     @medications = Medication.all
+    @medications = Medication.paginate(:page => params[:page], :per_page => 5)
   end
   
   def show
@@ -36,6 +38,8 @@ class MedicationsController < ApplicationController
     @medication.delete
     redirect_to root_path
   end
+ 
+end
 
 
 private
@@ -51,5 +55,3 @@ private
     @patient = Patient.find params[:id]
   end
 
-
-end

@@ -21,7 +21,8 @@
             / = link_to "Delete Medication", medication_path(medication), method: :delete
             / %a.btn.btn-sm.btn-danger{:href => medication_path(medication), method: :delete, :role => "button"} Delete Medication
             = link_to "Delete Medication", medication_path(medication), method: :delete, class: "btn-sm btn-danger", data: { confirm: 'Are you sure?' }
-            %br
+    = will_paginate @medications
+    %br
     %a.btn.btn-warning{:href => root_path, :role => "button"} Return to Main »
 
   %br
