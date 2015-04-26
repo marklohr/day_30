@@ -16,8 +16,7 @@ gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-sass'
 gem 'will_paginate'
-# Use pg for deployment to Heroku
-gem 'pg'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -38,6 +37,10 @@ gem 'faker'
 gem 'quiet_assets'
 gem 'devise'
 gem 'jquery-turbolinks'
+
+group :production do
+  # Use pg for deployment to Heroku
+  gem 'pg'
 
 
 # Use ActiveModel has_secure_password
