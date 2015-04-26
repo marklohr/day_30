@@ -8,7 +8,7 @@ gem 'binding_of_caller'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
-gem 'mysql2'
+
 gem 'ransack'
 # Use Bootstrap for styling
 gem 'bootstrap-sass'
@@ -16,6 +16,8 @@ gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-sass'
 gem 'will_paginate'
+# Use pg for deployment to Heroku
+gem 'pg'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -50,7 +52,7 @@ gem 'jquery-turbolinks'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+  gem 'mysql2'
   # Access an IRB console on exception pages or by using <%= console %> in views
   # gem 'web-console', '~> 2.0'
 
@@ -64,7 +66,6 @@ group :development, :test do
   # Needed for non-headless testing
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
-  gem 'factory_girl_rails'
 
 end
 
