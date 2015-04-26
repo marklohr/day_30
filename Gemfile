@@ -41,7 +41,7 @@ gem 'jquery-turbolinks'
 group :production do
   # Use pg for deployment to Heroku
   gem 'pg'
-
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
