@@ -37,6 +37,7 @@ gem 'faker'
 gem 'quiet_assets'
 gem 'devise'
 gem 'jquery-turbolinks'
+gem 'rails_12factor'
 
 group :production do
   # Use pg for deployment to Heroku
