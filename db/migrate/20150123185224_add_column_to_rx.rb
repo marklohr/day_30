@@ -7,7 +7,6 @@ class AddColumnToRx < ActiveRecord::Migration
       add_column :doctors, :specialty, :string
       add_column :doctors, :biography, :text
 
-      add_column :medications, :name, :string
       add_column :medications, :side_effects, :string
       
         
